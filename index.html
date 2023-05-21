@@ -1,95 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav nav__top">
+        <img src="./images/logo-top.svg" alt="logo" class="logo logo--top" />
+        <div class="nav__toggle">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="close"
+            class="nav__open"
+          />
+          <img src="./images/icon-open.svg" alt="close" class="nav__open" />
+        </div>
+        <ul class="nav__links nav__links--top">
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--top">Pricing</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--top">Product</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--top">About Us</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--top">Careers</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--top">Community</a>
+          </li>
+        </ul>
+        <button class="nav__btn btn btn--orange">Get Started</button>
+      </nav>
+    </header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
+    Bring everyone together to build better products. Manage makes it simple for
+    software teams to plan day-to-day tasks while keeping the larger team goals
+    in view. Get Started What’s different about Manage? Manage provides all the
+    functionality your team needs, without the complexity. Our software is
+    tailor-made for modern digital product teams. 01 Track company-wide progress
+    See how your day-to-day tasks fit into the wider vision. Go from tracking
+    progress at the milestone level all the way done to the smallest of details.
+    Never lose sight of the bigger picture again. 02 Advanced built-in reports
+    Set internal delivery estimates and track progress toward company goals. Our
+    customisable dashboard helps you build out the reports you need to keep key
+    stakeholders informed. 03 Everything you need in one place Stop jumping from
+    one service to another to communicate, store files, track tasks and share
+    documents. Manage offers an all-in-one team productivity solution. What
+    they’ve said Anisha Li “Manage has supercharged our team’s workflow. The
+    ability to maintain visibility on larger milestones at all times keeps
+    everyone motivated.” Ali Bravo “We have been able to cancel so many other
+    subscriptions since using Manage. There is no more cross-channel confusion
+    and everyone is much more focused.” Richard Watts “Manage allows us to
+    provide structure and process. It keeps us organized and focused. I can’t
+    stop recommending them to everyone I talk to!” Shanai Gough “Their software
+    allows us to track, manage and collaborate on our projects from anywhere. It
+    keeps the whole team in-sync without being intrusive.” Get Started Simplify
+    how your team works today. Get Started
 
-  <title>Frontend Mentor | Manage landing page</title>
+    <footer>
+      <nav class="nav nav__bottom">
+        <img
+          src="./images/logo-bottom.svg"
+          alt="logo"
+          class="logo logo--bottom"
+        />
 
+        <ul class="nav__links nav__links--social-media">
+          <li class="nav__icon">
+            <a href="" class="nav__anchor nav__anchor--social-media">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook"
+                class="nav__img"
+              />
+            </a>
+          </li>
+          <li class="nav__icon">
+            <a href="" class="nav__anchor nav__anchor--social-media">
+              <img
+                src="./images/icon-youtube.svg"
+                alt="youtube"
+                class="nav__img"
+              />
+            </a>
+          </li>
+          <li class="nav__icon">
+            <a href="" class="nav__anchor nav__anchor--social-media">
+              <img
+                src="./images/icon-twitter.svg"
+                alt="twitter"
+                class="nav__img"
+              />
+            </a>
+          </li>
+          <li class="nav__icon">
+            <a href="" class="nav__anchor nav__anchor--social-media">
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="pinterest"
+                class="nav__img"
+              />
+            </a>
+          </li>
+          <li class="nav__icon">
+            <a href="" class="nav__anchor nav__anchor--social-media">
+              <img
+                src="./images/icon-instagram.svg"
+                alt="instagram"
+                class="nav__img"
+              />
+            </a>
+          </li>
+        </ul>
 
-</head>
-<body>
+        <ul class="nav__links nav__links--bottom">
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--bottom">Pricing</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--bottom">Product</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--bottom">About Us</a>
+          </li>
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--bottom">Careers</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--bottom">Community</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__anchor nav__anchor--bottom"
+              >Privacy Policy</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-  Get Started
+      <form action="POST" class="submit-email">
+        <input
+          type="email"
+          placeholder="Updates in
+    your inbox…"
+          name="email"
+          id="email"
+          class="submit-email__input"
+        />
+        <aside class="submit-email__error-mssg">
+          <p class="submit-email__error-txt">Please provide a valid email.</p>
+        </aside>
+        <button class="submit-email__btn btn btn--orange">Go</button>
+      </form>
+    <!-- Set below as position:absolute; -->
+      <aside class="copyright">
+        <p class="copyright__text">Copyright 2020. All Rights Reserved</p>
+      </aside>
+    </footer>
+    
 
-  Bring everyone together to build better products.
-
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
-  
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
