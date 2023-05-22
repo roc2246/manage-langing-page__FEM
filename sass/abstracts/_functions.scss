@@ -4,7 +4,7 @@
 }
 
 @function maxSCSS($min-value, $max-value) {
-  $input1: rem(min-value);
+  $input1: rem($min-value);
   $input2: (
       $max-value /
         map-get(
