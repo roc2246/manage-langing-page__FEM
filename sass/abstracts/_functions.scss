@@ -1,0 +1,16 @@
+@function rem($value) {
+  $remValue: ($value / $font-size) + rem;
+  @return $remValue;
+}
+
+@function max($min-value, $max-value) {
+  $input1: rem(min-value);
+  $input2: (
+      $max-value /
+        map-get(
+          $map: $layout,
+          $key: desktop,
+        )
+    ) + vw;
+  @return #{"max(#{$input1}, #{$input2})"};
+}
