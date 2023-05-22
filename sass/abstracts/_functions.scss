@@ -3,7 +3,7 @@
   @return $remValue;
 }
 
-@function max($min-value, $max-value) {
+@function maxSCSS($min-value, $max-value) {
   $input1: rem(min-value);
   $input2: (
       $max-value /
