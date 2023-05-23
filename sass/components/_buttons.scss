@@ -1,0 +1,19 @@
+.btn {
+  padding: rem(18px) rem(32px);
+  border-radius: 2rem;
+  &--orange {
+    background-color: var(--colors-bright-red);
+    color: white;
+    &:hover {
+      background-color: var(--colors-pale-orange);
+    }
+  }
+
+  &--white {
+    background-color: white;
+    color: var(--colors-bright-red);
+    &:hover {
+      color: var(--colors-pale-orange);
+    }
+  }
+}

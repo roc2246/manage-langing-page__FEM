@@ -6,6 +6,7 @@
   --colors-very-dark-blue: #1d1e25;
   --colors-very-pale-red: #ffefeb;
   --colors-very-light-gray: #fafafa;
+  --colors-pale-orange: #f98f75;
   --font-size: 16px;
   --font-family: Be Vietnam Pro, sans-serif;
   --font-weights-bold:  400;
@@ -34,7 +35,6 @@ a {
 button {
   cursor: pointer;
   background-color: transparent;
-  color: white;
   font-weight: var(--font-weights-boldest);
   border: none; }
 
@@ -108,3 +108,17 @@ p {
 
 .copyright__paragraph {
   font-size: 0.75rem; }
+
+.btn {
+  padding: 1.125rem 2rem;
+  border-radius: 2rem; }
+  .btn--orange {
+    background-color: var(--colors-bright-red);
+    color: white; }
+    .btn--orange:hover {
+      background-color: var(--colors-pale-orange); }
+  .btn--white {
+    background-color: white;
+    color: var(--colors-bright-red); }
+    .btn--white:hover {
+      color: var(--colors-pale-orange); }
