@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;700&display=swap");
 :root {
   --colors-bright-red: #f25f3a;
-  --colors-dark-blue: #242d52; }
+  --colors-dark-blue: #242d52;
+  --colors-dark-grayish-blue: #9095a7;
+  --colors-very-dark-blue: #1d1e25;
+  --colors-very-pale-red: #ffefeb;
+  --colors-very-light-gray: #fafafa;
+  --font-size: 16px;
+  --font-family: Be Vietnam Pro, sans-serif;
+  --font-weights-bold:  400;
+  --font-weights-bolder:  500;
+  --font-weights-boldest:  700;
+  --layouts-mobile: 23.4375rem;
+  --layouts-desktop: 90rem; }

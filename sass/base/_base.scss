@@ -2,4 +2,19 @@
   @each $color, $name in map-get($colors, primary) {
     --colors-#{$color}: #{$name};
   }
+  @each $color, $name in map-get($colors, neutral) {
+    --colors-#{$color}: #{$name};
+  }
+
+  --font-size: #{$font-size};
+
+  --font-family: #{$font-family};
+
+  @each $weight, $name in $font-weights{
+    --font-weights-#{$weight}:  #{$name};
+  }
+
+  @each $layout, $name in $layout {
+    --layouts-#{$layout}: #{rem($name)};
+  }
 }
