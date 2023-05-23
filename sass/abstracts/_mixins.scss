@@ -1,0 +1,18 @@
+@mixin textAlign($block) {
+  .#{$block} {
+    @if ($block == CTA) {
+      &__heading {
+        text-align: center;
+      }
+    } @else if ($block == copyright){
+        &__paragraph {
+            text-align: center;
+          }
+    } @else {
+      &__heading,
+      &__paragraph {
+        text-align: center;
+      }
+    }
+  }
+}
