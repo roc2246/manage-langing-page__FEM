@@ -18,3 +18,12 @@
     --layouts-#{$layout}: #{rem($name)};
   }
 }
+
+html{
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+body{
+  margin: 0;
+}
