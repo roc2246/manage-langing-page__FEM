@@ -42,4 +42,6 @@ h1, h2, h3 {
   color: var(--colors-dark-blue); }
 
 p {
+  font-weight: var(--font-weights-bolder);
+  line-height: 1.5rem;
   color: var(--colors-dark-grayish-blue); }
