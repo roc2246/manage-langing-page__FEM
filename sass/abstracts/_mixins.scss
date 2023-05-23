@@ -1,6 +1,6 @@
 @mixin textAlign($block) {
   .#{$block} {
-    @if ($block == CTA) {
+    @if ($block == CTA)  or ($block == testimonials){
       &__heading {
         text-align: center;
       }

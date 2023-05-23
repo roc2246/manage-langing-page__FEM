@@ -1,0 +1,24 @@
+.testimonial:not(:nth-child(2)) {
+  display: none;
+}
+
+.testimonial {
+  margin-left: rem(6px);
+  margin-right: rem(6px);
+  &__info {
+      background-color: var(--colors-very-light-gray);
+    // background-color: red;
+    padding-left: rem(38px);
+    padding-right: rem(38px);
+    padding-bottom: rem(47px);
+    padding-top: rem(65px);
+  }
+
+  &__img {
+    z-index: 1;
+    width: rem(72px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
