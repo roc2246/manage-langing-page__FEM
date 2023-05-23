@@ -1,0 +1,5 @@
+:root {
+  @each $color, $name in map-get($colors, primary) {
+    --colors-#{$color}: #{$name};
+  }
+}
