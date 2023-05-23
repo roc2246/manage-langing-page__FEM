@@ -1,0 +1,28 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: var(--font-weights-boldest);
+    border: none;
+}
+
+h1, h2, h3{
+    color: var(--colors-dark-blue);
+}
+
+p{
+    color: var(--colors-dark-grayish-blue);
+}
