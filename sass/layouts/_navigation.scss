@@ -1,0 +1,13 @@
+.nav{
+    margin-top: rem(39px);
+    margin-left: rem(23px);
+    margin-right: rem(23px);
+    &__links{
+        &--top{
+            display: none;
+        }
+    }
+    &__btn{
+        display: none;
+    }
+}

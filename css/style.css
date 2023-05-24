@@ -126,6 +126,9 @@ p {
     .btn--white:hover {
       color: var(--colors-pale-orange); }
 
+.logo {
+  align-self: center; }
+
 .testimonial:not(:nth-child(2)) {
   display: none; }
 
@@ -145,6 +148,14 @@ p {
     margin-left: auto;
     margin-right: auto; }
 
+.nav__close {
+  display: none; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .testimonials__container {
   display: flex;
   flex-direction: row;
@@ -158,3 +169,12 @@ p {
   .testimonial__info {
     grid-row: 2/4;
     grid-column: 1/3; }
+
+.nav {
+  margin-top: 2.4375rem;
+  margin-left: 1.4375rem;
+  margin-right: 1.4375rem; }
+  .nav__links--top {
+    display: none; }
+  .nav__btn {
+    display: none; }

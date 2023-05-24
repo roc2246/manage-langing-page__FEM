@@ -1,3 +1,9 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .testimonials {
   &__container {
     display: flex;
