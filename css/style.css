@@ -148,6 +148,9 @@ p {
 .nav__close {
   display: none; }
 
+.reasons {
+  width: 20rem; }
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -158,6 +161,11 @@ p {
   flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: space-between; }
+
+.blurb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .testimonials__container {
   display: flex;
