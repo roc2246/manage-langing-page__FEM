@@ -1,7 +1,9 @@
 .CTA {
-  background-color: var(--colors-bright-red);
+  margin-top: rem(41px);
   padding-top: rem(103px);
   padding-bottom: rem(89px);
+
+  background-color: var(--colors-bright-red);
 
   &__btn {
     display: block;

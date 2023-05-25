@@ -192,9 +192,10 @@ p {
     width: 21.5rem; }
 
 .CTA {
-  background-color: var(--colors-bright-red);
+  margin-top: 2.5625rem;
   padding-top: 6.4375rem;
-  padding-bottom: 5.5625rem; }
+  padding-bottom: 5.5625rem;
+  background-color: var(--colors-bright-red); }
   .CTA__btn {
     display: block;
     margin-top: 1.5rem;
