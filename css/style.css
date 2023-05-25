@@ -156,16 +156,19 @@ p {
     height: auto; }
 
 .reasons {
-  width: 21.5rem;
   margin-left: auto; }
 
-.reason__heading {
-  background-color: var(--colors-very-pale-red);
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem; }
-  .reason__heading--no {
-    background-color: var(--colors-bright-red);
-    border-radius: 1.5rem; }
+.reason {
+  width: 22rem; }
+  .reason__heading {
+    background-color: var(--colors-very-pale-red);
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem; }
+    .reason__heading--no {
+      background-color: var(--colors-bright-red);
+      border-radius: 1.5rem; }
+  .reason__paragraph {
+    width: 21.5rem; }
 
 .nav {
   display: flex;
