@@ -1,0 +1,17 @@
+footer {
+  background-color: var(--colors-very-dark-blue);
+  padding-top: rem(50px);
+  padding-bottom: rem(31px);
+}
+
+.submit-email {
+  &__input {
+    width: rem(238px);
+  }
+  &__btn{
+    width: rem(80px);
+  }
+  &__error-txt {
+    display: none;
+  }
+}

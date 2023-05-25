@@ -5,6 +5,18 @@
 @include textAlign(CTA);
 @include textAlign(copyright);
 
+.nav {
+  &__links {
+    &--bottom {
+      & > .nav__link {
+        & > .nav__anchor {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
 .hero {
   &__paragraph {
     margin-top: 0.25rem;
@@ -28,8 +40,8 @@
       padding: rem(12px) rem(25px);
       color: white;
     }
-    &--text{
-      padding-left: .5rem;
+    &--text {
+      padding-left: 0.5rem;
     }
   }
   &__paragraph {

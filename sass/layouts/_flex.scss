@@ -4,14 +4,14 @@
   justify-content: space-between;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
 }
 
-.blurb{
+.blurb {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -19,11 +19,10 @@
   gap: rem(53px); /* Adjust for mobile responsiveness */
 }
 
-.reasons{
+.reasons {
   display: flex;
   flex-direction: column;
   gap: rem(53px);
-  
 }
 
 .testimonials {
@@ -33,16 +32,40 @@
     justify-content: center;
     gap: rem(9px);
   }
-  &__selectors{
+  &__selectors {
     display: flex;
     justify-content: center;
   }
 }
 
-.CTA{
+.CTA {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: rem(24px);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+
+}
+
+.nav {
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  &__links {
+    &--social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }

@@ -1,13 +1,25 @@
-.nav{
+.nav {
+  margin-left: rem(23px);
+  margin-right: rem(23px);
+  &__top {
     margin-top: rem(39px);
-    margin-left: rem(23px);
-    margin-right: rem(23px);
-    &__links{
-        &--top{
-            display: none;
-        }
+  }
+  &__links {
+    &--top {
+      display: none;
     }
-    &__btn{
-        display: none;
+    &--bottom {
+      width: rem(264px);
     }
+    &--social-media {
+      width: rem(296px);
+    }
+  }
+  &__img {
+    width: rem(32px);
+    height: auto;
+  }
+  &__btn {
+    display: none;
+  }
 }

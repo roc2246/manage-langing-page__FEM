@@ -1,3 +1,7 @@
-.logo{
-    align-self: center;
+.logo {
+  align-self: center;
+  &--bottom {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
