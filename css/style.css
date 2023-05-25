@@ -152,9 +152,8 @@ p {
   display: none; }
 
 .testimonial {
-  margin-top: 4.3125rem;
-  margin-left: 0.375rem;
-  margin-right: 0.375rem; }
+  width: 22.5rem;
+  margin-top: 4.3125rem; }
   .testimonial__img {
     z-index: 1;
     width: 4.5rem;
@@ -219,6 +218,7 @@ p {
 .testimonials__container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 0.5625rem; }
 
 .testimonials__selectors {

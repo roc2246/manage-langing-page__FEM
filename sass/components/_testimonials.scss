@@ -16,9 +16,8 @@
 }
 
 .testimonial {
+  width: rem(360px);
   margin-top: rem(69px);
-  margin-left: rem(6px);
-  margin-right: rem(6px);
   &__img {
     z-index: 1;
     width: rem(72px);
