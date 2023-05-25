@@ -1,3 +1,24 @@
-.reasons{
-    width: 20rem;
+.blurb {
+  margin-top: rem(104px);
+  &__info {
+    width: rem(290px);
+    height: auto;
+  }
+}
+
+.reasons {
+  width: 21.5rem;
+  margin-left: auto;
+}
+
+.reason {
+  &__heading {
+    background-color: var(--colors-very-pale-red);
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    &--no {
+      background-color: var(--colors-bright-red);
+      border-radius: 1.5rem;
+    }
+  }
 }
