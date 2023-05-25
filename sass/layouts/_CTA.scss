@@ -5,10 +5,15 @@
 
   background-color: var(--colors-bright-red);
 
+  &__heading{
+    display: block;
+    width: 19rem;
+
+    
+  }
+
   &__btn {
     display: block;
-    margin-top: rem(24px);
-    margin-left: auto;
-    margin-right: auto;
+    align-self: center;
   }
 }

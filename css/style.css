@@ -103,9 +103,7 @@ p {
 
 .CTA__heading {
   color: white;
-  font-size: 2.25rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem; }
+  font-size: 2.25rem; }
 
 .copyright__paragraph {
   font-size: 0.75rem; }
@@ -196,11 +194,12 @@ p {
   padding-top: 6.4375rem;
   padding-bottom: 5.5625rem;
   background-color: var(--colors-bright-red); }
+  .CTA__heading {
+    display: block;
+    width: 19rem; }
   .CTA__btn {
     display: block;
-    margin-top: 1.5rem;
-    margin-left: auto;
-    margin-right: auto; }
+    align-self: center; }
 
 .nav {
   display: flex;
@@ -235,6 +234,13 @@ p {
 .testimonials__selectors {
   display: flex;
   justify-content: center; }
+
+.CTA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; }
 
 .testimonial {
   display: grid; }

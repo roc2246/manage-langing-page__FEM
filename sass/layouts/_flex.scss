@@ -38,3 +38,11 @@
     justify-content: center;
   }
 }
+
+.CTA{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(24px);
+}
