@@ -1,0 +1,14 @@
+.testimonials {
+  &__selector {
+    width: rem(9px);
+    height: rem(14px);
+    transform: scale(70%);
+    border: solid;
+    border-radius: 50%;
+    border-width: rem(1.5px);
+    border-color: var(--colors-bright-red);
+    &--selected {
+      background-color: var(--colors-bright-red);
+    }
+  }
+}
