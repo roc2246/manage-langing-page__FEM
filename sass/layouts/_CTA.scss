@@ -1,0 +1,12 @@
+.CTA {
+  background-color: var(--colors-bright-red);
+  padding-top: rem(103px);
+  padding-bottom: rem(89px);
+
+  &__btn {
+    display: block;
+    margin-top: rem(24px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
