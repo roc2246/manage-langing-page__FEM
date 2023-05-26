@@ -19,6 +19,11 @@ footer {
 
 
 .copyright{
+  background-color: var(--colors-very-dark-blue);
+  width: 100%;
+  padding-top: rem(51px);
+  padding-bottom: rem(36px);
+  
   position: absolute;
-  margin-bottom: -2rem;
+  margin-bottom: rem(-120px);
 }

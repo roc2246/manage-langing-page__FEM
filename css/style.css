@@ -132,6 +132,7 @@ p {
 .logo {
   align-self: center; }
   .logo--bottom {
+    margin-top: 3.25rem;
     margin-left: auto;
     margin-right: auto; }
 
@@ -284,8 +285,12 @@ footer {
     display: none; }
 
 .copyright {
+  background-color: var(--colors-very-dark-blue);
+  width: 100%;
+  padding-top: 3.1875rem;
+  padding-bottom: 2.25rem;
   position: absolute;
-  margin-bottom: -2rem; }
+  margin-bottom: -7.5rem; }
 
 .testimonial {
   display: grid; }
@@ -358,8 +363,10 @@ footer {
   .nav__links--top {
     display: none; }
   .nav__links--bottom {
+    margin-top: 2.5rem;
     width: 16.5rem; }
   .nav__links--social-media {
+    margin-top: 2.5rem;
     width: 18.5rem; }
   .nav__img {
     width: 2rem;
