@@ -283,6 +283,10 @@ footer {
   .submit-email__error-txt {
     display: none; }
 
+.copyright {
+  position: absolute;
+  margin-bottom: -2rem; }
+
 .testimonial {
   display: grid; }
   .testimonial__img {
