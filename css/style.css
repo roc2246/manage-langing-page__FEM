@@ -274,14 +274,14 @@ footer {
   padding-top: 3.125rem;
   padding-bottom: 1.9375rem; }
 
-.submit-email__input {
-  width: 14.875rem; }
-
-.submit-email__btn {
-  width: 5rem; }
-
-.submit-email__error-txt {
-  display: none; }
+.submit-email {
+  height: 5.3125rem; }
+  .submit-email__input {
+    width: 14.875rem; }
+  .submit-email__btn {
+    width: 5rem; }
+  .submit-email__error-txt {
+    display: none; }
 
 .testimonial {
   display: grid; }
@@ -318,7 +318,17 @@ footer {
     grid-column: 2/3; }
 
 .submit-email {
-  display: grid; }
+  display: grid;
+  grid-template-rows: 3.5625rem auto;
+  column-gap: 1rem; }
+  .submit-email__input {
+    grid-column: 1/2; }
+  .submit-email__btn {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .submit-email__error-mssg {
+    grid-column: 1/2;
+    grid-row: 2/3; }
 
 .hero {
   margin-top: 3rem;
