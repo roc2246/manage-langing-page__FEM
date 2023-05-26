@@ -34,7 +34,8 @@ a {
 
 input {
   border-radius: 2rem;
-  height: 3.1875rem; }
+  height: 3.1875rem;
+  padding-left: 1rem; }
 
 button {
   cursor: pointer;
