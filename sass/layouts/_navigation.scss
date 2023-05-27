@@ -1,8 +1,9 @@
 .nav {
-  margin-left: clampSCSS(23px, 4%, 165px);
-  margin-right: clampSCSS(23px, 4%, 165px);
   &__top {
     margin-top: maxSCSS(39px, 56px);
+    margin-left: auto;
+    margin-right: auto;
+    width: maxSCSS(327px, 1107px);
   }
   &__links {
     &--top {

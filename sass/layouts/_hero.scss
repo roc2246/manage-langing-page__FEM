@@ -1,18 +1,19 @@
 .hero {
-    margin-top: rem(48px);
-  margin-left: rem(34px);
-  margin-right: rem(34px);
+  margin-top: rem(48px);
+  margin-left: auto;
+  margin-right: auto;
+  width: maxSCSS(305px, 1106px);
   &__img {
     align-self: center;
     width: rem(308px);
     height: auto;
   }
 
-  &__info{
+  &__info {
     width: rem(304px);
   }
 
-  &__btn{
+  &__btn {
     display: block;
     margin-top: rem(31px);
     margin-left: auto;
