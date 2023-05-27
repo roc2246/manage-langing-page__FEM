@@ -13,8 +13,8 @@
 
   --font-family: #{$font-family};
 
-  @each $weight, $name in $font-weights{
-    --font-weights-#{$weight}:  #{$name};
+  @each $weight, $name in $font-weights {
+    --font-weights-#{$weight}: #{$name};
   }
 
   @each $layout, $name in $layout {
@@ -22,19 +22,17 @@
   }
 }
 
-html{
+html {
   font-size: var(--font-size);
   font-family: var(--font-family);
 }
 
-body{
+body {
   margin: 0;
-  background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
+  background-image: url("../images/bg-tablet-pattern.svg"),
+    url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 28rem, 20rem;
-  background-position-x: rem(120px), 15rem;
-  background-position-y: -10rem, 28rem;
-
-
-
+  background-size: 30rem, 20rem;
+  background-position-x: rem(80px), rem(240px);
+  background-position-y: rem(-160px), rem(448px);
 }

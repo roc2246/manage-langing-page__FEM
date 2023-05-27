@@ -9,9 +9,9 @@
   --colors-pale-orange: #f98f75;
   --font-size: 16px;
   --font-family: Be Vietnam Pro, sans-serif;
-  --font-weights-bold:  400;
-  --font-weights-bolder:  500;
-  --font-weights-boldest:  700;
+  --font-weights-bold: 400;
+  --font-weights-bolder: 500;
+  --font-weights-boldest: 700;
   --layouts-mobile: 23.4375rem;
   --layouts-desktop: 90rem; }
 
@@ -23,8 +23,8 @@ body {
   margin: 0;
   background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 28rem, 20rem;
-  background-position-x: 7.5rem, 15rem;
+  background-size: 30rem, 20rem;
+  background-position-x: 5rem, 15rem;
   background-position-y: -10rem, 28rem; }
 
 ul {
