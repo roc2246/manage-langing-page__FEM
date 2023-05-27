@@ -5,8 +5,13 @@
   width: maxSCSS(305px, 1106px);
   &__img {
     align-self: center;
-    width: maxSCSS(308px, 580px);
+    width: maxSCSS(300px, 580px);
     height: auto;
+    margin-left: auto;
+  }
+
+  &__info{
+    margin-right: auto;
   }
 
   &__heading {

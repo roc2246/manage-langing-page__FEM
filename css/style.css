@@ -278,7 +278,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  justify-content: center; }
+  justify-content: space-between; }
 
 @media (min-width: 822px) {
   .hero {
@@ -396,8 +396,11 @@ footer {
   width: max(19.0625rem, 76.80556vw); }
   .hero__img {
     align-self: center;
-    width: max(19.25rem, 40.27778vw);
-    height: auto; }
+    width: max(18.75rem, 40.27778vw);
+    height: auto;
+    margin-left: auto; }
+  .hero__info {
+    margin-right: auto; }
   .hero__heading {
     width: max(18.75rem, 24.30556vw); }
   .hero__paragraph {
