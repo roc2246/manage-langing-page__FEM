@@ -1,16 +1,19 @@
 .hero {
-  margin-top: rem(48px);
+  margin-top: maxSCSS(48px, 100px);
   margin-left: auto;
   margin-right: auto;
   width: maxSCSS(305px, 1106px);
   &__img {
     align-self: center;
-    width: rem(308px);
+    width: maxSCSS(308px, 580px);
     height: auto;
   }
 
-  &__info {
-    width: rem(304px);
+  &__heading {
+    width: maxSCSS(300px, 350px);
+  }
+  &__paragraph{
+    width: maxSCSS(295px, 300px);
   }
 
   &__btn {
@@ -18,5 +21,14 @@
     margin-top: rem(31px);
     margin-left: auto;
     margin-right: auto;
+  }
+  @media (min-width: 822px) {
+    &__info{
+      margin-top: rem(56px);
+    }
+
+    &__btn {
+      margin-left: unset;
+    }
   }
 }

@@ -55,9 +55,6 @@ h3 {
   color: var(--colors-dark-blue);
   margin: 0; }
 
-h1 {
-  font-size: 2.1875rem; }
-
 h2 {
   font-size: 1.78125rem;
   line-height: 2.75rem; }
@@ -70,14 +67,26 @@ p {
 .hero__heading, .hero__paragraph {
   text-align: center; }
 
+@media (min-width: 822px) {
+  .hero__heading, .hero__paragraph {
+    text-align: left; } }
+
 .blurb__heading, .blurb__paragraph {
   text-align: center; }
+
+@media (min-width: 822px) {
+  .blurb__heading, .blurb__paragraph {
+    text-align: left; } }
 
 .testimonials__heading {
   text-align: center; }
 
 .testimonial__heading, .testimonial__paragraph {
   text-align: center; }
+
+@media (min-width: 822px) {
+  .testimonial__heading, .testimonial__paragraph {
+    text-align: left; } }
 
 .CTA__heading {
   text-align: center; }
@@ -91,7 +100,11 @@ p {
 .nav__links--bottom > .nav__link > .nav__anchor {
   color: white; }
 
+.hero__heading {
+  font-size: max(2.1875rem, 2.77778vw); }
+
 .hero__paragraph {
+  font-size: 0.875rem;
   margin-top: 0.25rem; }
 
 .blurb__paragraph {
@@ -261,6 +274,10 @@ p {
   flex-wrap: wrap-reverse;
   justify-content: center; }
 
+@media (min-width: 822px) {
+  .hero {
+    justify-content: space-between; } }
+
 .blurb {
   display: flex;
   flex-direction: row;
@@ -367,21 +384,28 @@ footer {
     grid-row: 2/3; }
 
 .hero {
-  margin-top: 3rem;
+  margin-top: max(3rem, 6.94444vw);
   margin-left: auto;
   margin-right: auto;
   width: max(19.0625rem, 76.80556vw); }
   .hero__img {
     align-self: center;
-    width: 19.25rem;
+    width: max(19.25rem, 40.27778vw);
     height: auto; }
-  .hero__info {
-    width: 19rem; }
+  .hero__heading {
+    width: max(18.75rem, 24.30556vw); }
+  .hero__paragraph {
+    width: max(18.4375rem, 20.83333vw); }
   .hero__btn {
     display: block;
     margin-top: 1.9375rem;
     margin-left: auto;
     margin-right: auto; }
+  @media (min-width: 822px) {
+    .hero__info {
+      margin-top: 3.5rem; }
+    .hero__btn {
+      margin-left: unset; } }
 
 .nav__top {
   margin-top: max(2.4375rem, 3.88889vw);

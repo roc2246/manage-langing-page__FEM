@@ -25,7 +25,11 @@
 }
 
 .hero {
+  &__heading{
+  font-size: maxSCSS(35px, 40px);
+  }
   &__paragraph {
+    font-size: rem(14px);
     margin-top: 0.25rem;
   }
 }

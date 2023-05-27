@@ -13,6 +13,12 @@
       &__paragraph {
         text-align: center;
       }
+      @media (min-width: 822px) {
+        &__heading,
+        &__paragraph {
+          text-align: left;
+        }
+      }
     }
   }
 }
