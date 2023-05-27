@@ -209,16 +209,22 @@ p {
     display: none; } }
 
 .blurb {
-  margin-top: 6.5rem; }
+  margin-top: 6.5rem;
+  width: max(23.4375rem, 76.80556vw);
+  margin-left: auto;
+  margin-right: auto; }
   .blurb__info {
-    width: 18.125rem;
     height: auto; }
+  .blurb__heading {
+    width: max(18.125rem, 29.72222vw); }
+  .blurb__paragraph {
+    width: 18.125rem; }
 
 .reasons {
   margin-left: auto; }
 
 .reason {
-  width: 22rem; }
+  width: max(22rem, 36.52778vw); }
   .reason__heading {
     background-color: var(--colors-very-pale-red);
     border-top-left-radius: 1.5rem;

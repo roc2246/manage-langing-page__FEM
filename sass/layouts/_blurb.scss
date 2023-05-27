@@ -1,8 +1,16 @@
 .blurb {
   margin-top: rem(104px);
+  width: maxSCSS(375px, 1106px);
+  margin-left: auto;
+  margin-right: auto;
   &__info {
-    width: rem(290px);
     height: auto;
+  }
+  &__heading{
+    width: maxSCSS(290px, 428px);
+  }
+  &__paragraph{
+    width: rem(290px);
   }
 }
 
@@ -11,7 +19,7 @@
 }
 
 .reason {
-  width: 22rem;
+  width: maxSCSS(352px, 526px);
   &__heading {
     background-color: var(--colors-very-pale-red);
     border-top-left-radius: 1.5rem;
@@ -21,7 +29,7 @@
       border-radius: 1.5rem;
     }
   }
-  &__paragraph{
+  &__paragraph {
     width: 21.5rem;
   }
 }
