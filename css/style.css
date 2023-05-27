@@ -67,14 +67,14 @@ p {
 .hero__heading, .hero__paragraph {
   text-align: center; }
 
-@media (min-width: 822px) {
+@media (min-width: 730px) {
   .hero__heading, .hero__paragraph {
     text-align: left; } }
 
 .blurb__heading, .blurb__paragraph {
   text-align: center; }
 
-@media (min-width: 822px) {
+@media (min-width: 730px) {
   .blurb__heading, .blurb__paragraph {
     text-align: left; } }
 
@@ -84,7 +84,7 @@ p {
 .testimonial__heading, .testimonial__paragraph {
   text-align: center; }
 
-@media (min-width: 822px) {
+@media (min-width: 730px) {
   .testimonial__heading, .testimonial__paragraph {
     text-align: left; } }
 
@@ -209,12 +209,16 @@ p {
     display: none; } }
 
 .blurb {
-  margin-top: 6.5rem;
-  width: max(23.4375rem, 76.80556vw);
+  margin-top: max(6.5rem, 9.02778vw);
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: max(23.4375rem, 76.80556vw); }
   .blurb__info {
-    height: auto; }
+    margin-right: auto;
+    margin-left: auto; }
+  @media (min-width: 490px) {
+    .blurb__info {
+      margin-left: unset; } }
   .blurb__heading {
     width: max(18.125rem, 29.72222vw); }
   .blurb__paragraph {
@@ -224,7 +228,7 @@ p {
   margin-left: auto; }
 
 .reason {
-  width: max(22rem, 36.52778vw); }
+  width: max(22.5rem, 36.52778vw); }
   .reason__heading {
     background-color: var(--colors-very-pale-red);
     border-top-left-radius: 1.5rem;
@@ -232,8 +236,16 @@ p {
     .reason__heading--no {
       background-color: var(--colors-bright-red);
       border-radius: 1.5rem; }
+  @media (min-width: 916px) {
+    .reason__heading {
+      width: unset;
+      background-color: unset; } }
   .reason__paragraph {
     width: 21.5rem; }
+  @media (min-width: 916px) {
+    .reason__paragraph {
+      margin-left: 5rem;
+      width: max(21.5rem, 27.08333vw); } }
 
 .CTA {
   margin-top: 2.5625rem;
@@ -280,17 +292,12 @@ p {
   flex-wrap: wrap-reverse;
   justify-content: space-between; }
 
-@media (min-width: 822px) {
-  .hero {
-    justify-content: space-between; } }
-
 .blurb {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 3.3125rem;
-  /* Adjust for mobile responsiveness */ }
+  justify-content: space-between;
+  gap: 3.3125rem; }
 
 .reasons {
   display: flex;

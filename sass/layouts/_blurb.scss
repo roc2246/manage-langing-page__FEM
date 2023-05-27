@@ -1,15 +1,21 @@
 .blurb {
-  margin-top: rem(104px);
-  width: maxSCSS(375px, 1106px);
+  margin-top: maxSCSS(104px, 130px);
   margin-left: auto;
   margin-right: auto;
+  width: maxSCSS(375px, 1106px);
   &__info {
-    height: auto;
+    margin-right: auto;
+    margin-left: auto;
   }
-  &__heading{
+  @media (min-width: 490px) {
+    &__info {
+      margin-left: unset;
+    }
+  }
+  &__heading {
     width: maxSCSS(290px, 428px);
   }
-  &__paragraph{
+  &__paragraph {
     width: rem(290px);
   }
 }
@@ -19,7 +25,7 @@
 }
 
 .reason {
-  width: maxSCSS(352px, 526px);
+  width: maxSCSS(360px, 526px);
   &__heading {
     background-color: var(--colors-very-pale-red);
     border-top-left-radius: 1.5rem;
@@ -29,7 +35,20 @@
       border-radius: 1.5rem;
     }
   }
+  @media (min-width: 916px) {
+    &__heading {
+      width: unset;
+      background-color: unset;
+    }
+  }
   &__paragraph {
     width: 21.5rem;
   }
+  @media (min-width: 916px) {
+    &__paragraph {
+      margin-left: 5rem;
+      width: maxSCSS(344px, 390px);
+    }
+  }
+
 }
