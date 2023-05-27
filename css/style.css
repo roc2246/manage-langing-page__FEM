@@ -182,7 +182,7 @@ p {
   display: none; }
 
 .testimonial {
-  width: max(22.5rem, 37.43056vw);
+  width: min(96vw, 33.6875rem);
   margin-top: 4.3125rem; }
   .testimonial__img {
     z-index: 1;
@@ -192,8 +192,8 @@ p {
     margin-right: auto; }
   .testimonial__info {
     background-color: var(--colors-very-light-gray);
-    padding-left: max(2.375rem, 4.86111vw);
-    padding-right: max(2.375rem, 4.86111vw);
+    padding-left: min(10.13333vw, 4.375rem);
+    padding-right: min(10.13333vw, 4.375rem);
     padding-bottom: 2.9375rem;
     padding-top: 4.0625rem; }
 

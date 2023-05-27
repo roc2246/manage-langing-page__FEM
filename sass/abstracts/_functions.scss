@@ -7,6 +7,12 @@
   @return ($value / map-get($map: $layout, $key: $resolution) * 100) + vw;
 }
 
+@function minSCSS($min-value, $max-value) {
+  $input1: getVW($min-value, mobile);
+  $input2: rem($max-value);
+  @return #{"min(#{$input1}, #{$input2})"};
+}
+
 @function maxSCSS($min-value, $max-value) {
   $input1: rem($min-value);
   $input2: getVW($max-value, desktop);
