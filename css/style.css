@@ -20,7 +20,12 @@ html {
   font-family: var(--font-family); }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 28rem, 20rem;
+  background-position-x: 7.5rem, 15rem;
+  background-position-y: -10rem, 28rem; }
 
 ul {
   margin: 0;
@@ -205,7 +210,12 @@ p {
   margin-top: 2.5625rem;
   padding-top: 6.4375rem;
   padding-bottom: 5.5625rem;
-  background-color: var(--colors-bright-red); }
+  background-color: var(--colors-bright-red);
+  background-image: url("../images/bg-tablet-pattern-CTA.svg");
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  background-position-x: -23.75rem;
+  background-position-y: 6.25rem; }
   .CTA__heading {
     display: block;
     width: 19rem; }

@@ -29,4 +29,12 @@ html{
 
 body{
   margin: 0;
+  background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 28rem, 20rem;
+  background-position-x: rem(120px), 15rem;
+  background-position-y: -10rem, 28rem;
+
+
+
 }

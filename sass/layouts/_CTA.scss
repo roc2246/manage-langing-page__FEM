@@ -5,6 +5,12 @@
 
   background-color: var(--colors-bright-red);
 
+  background-image: url("../images/bg-tablet-pattern-CTA.svg");
+background-repeat: no-repeat;
+background-size: 30rem;
+background-position-x: rem(-380px);
+background-position-y: rem(100px);
+
   &__heading{
     display: block;
     width: 19rem;
