@@ -16,7 +16,7 @@
 }
 
 .testimonial {
-  width: rem(360px);
+  width: maxSCSS(360px, 539px);
   margin-top: rem(69px);
   &__img {
     z-index: 1;
@@ -28,8 +28,8 @@
   &__info {
     background-color: var(--colors-very-light-gray);
     // background-color: red;
-    padding-left: rem(38px);
-    padding-right: rem(38px);
+    padding-left: maxSCSS(38px, 70px);
+    padding-right: maxSCSS(38px, 70px);
     padding-bottom: rem(47px);
     padding-top: rem(65px);
   }

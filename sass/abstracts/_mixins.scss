@@ -13,12 +13,16 @@
       &__paragraph {
         text-align: center;
       }
-      @media (min-width: 730px) {
+
+      @if($block == hero) or ($block == blurb){
+         @media (min-width: 730px) {
         &__heading,
         &__paragraph {
           text-align: left;
         }
       }
+      }
+     
     }
   }
 }

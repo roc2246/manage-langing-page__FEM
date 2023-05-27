@@ -84,10 +84,6 @@ p {
 .testimonial__heading, .testimonial__paragraph {
   text-align: center; }
 
-@media (min-width: 730px) {
-  .testimonial__heading, .testimonial__paragraph {
-    text-align: left; } }
-
 .CTA__heading {
   text-align: center; }
 
@@ -186,7 +182,7 @@ p {
   display: none; }
 
 .testimonial {
-  width: 22.5rem;
+  width: max(22.5rem, 37.43056vw);
   margin-top: 4.3125rem; }
   .testimonial__img {
     z-index: 1;
@@ -196,8 +192,8 @@ p {
     margin-right: auto; }
   .testimonial__info {
     background-color: var(--colors-very-light-gray);
-    padding-left: 2.375rem;
-    padding-right: 2.375rem;
+    padding-left: max(2.375rem, 4.86111vw);
+    padding-right: max(2.375rem, 4.86111vw);
     padding-bottom: 2.9375rem;
     padding-top: 4.0625rem; }
 
