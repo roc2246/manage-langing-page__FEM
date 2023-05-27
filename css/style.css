@@ -253,11 +253,11 @@ p {
     align-self: center; }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  display: flex; }
+  .nav__top {
+    flex-direction: row;
+    justify-content: space-between; }
   .nav__bottom {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center; }
@@ -417,7 +417,7 @@ footer {
   margin-top: max(2.4375rem, 3.88889vw);
   margin-left: auto;
   margin-right: auto;
-  width: max(20.4375rem, 76.875vw); }
+  width: max(20.4375rem, 76.80556vw); }
 
 .nav__links--top {
   display: none; }

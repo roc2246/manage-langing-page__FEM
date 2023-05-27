@@ -1,9 +1,10 @@
 .nav {
   display: flex;
+  &__top{
   flex-direction: row;
-  justify-content: space-between;
+    justify-content: space-between;
+  }
   &__bottom {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
