@@ -1,5 +1,8 @@
 .logo {
   align-self: center;
+  &--top{
+    margin-top: .5rem;
+  }
   &--bottom {
     margin-top: rem(52px);
     margin-left: auto;

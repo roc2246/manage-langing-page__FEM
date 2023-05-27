@@ -1,12 +1,17 @@
 .nav {
-  margin-left: rem(23px);
-  margin-right: rem(23px);
+  margin-left: maxSCSS(23px, 165px);
+  margin-right: maxSCSS(23px, 165px);
   &__top {
-    margin-top: rem(39px);
+    margin-top: maxSCSS(39px, 56px);
   }
   &__links {
     &--top {
       display: none;
+    }
+    @media (min-width: 710px) {
+      &--top {
+        display: flex;
+      }
     }
     &--bottom {
       margin-top: rem(40px);
@@ -23,5 +28,10 @@
   }
   &__btn {
     display: none;
+  }
+  @media (min-width: 930px) {
+    &__btn {
+      display: block;
+    }
   }
 }

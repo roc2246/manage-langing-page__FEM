@@ -2,6 +2,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--top {
+      display: flex;
+      flex-direction: row;
+      gap: rem(29px);
+    }
+  }
 }
 
 .hero {
@@ -51,7 +62,6 @@ footer {
   flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: center;
-
 }
 
 .nav {

@@ -10,6 +10,13 @@
     &--bottom {
       & > .nav__link {
         & > .nav__anchor {
+          color: var(--colors-dark-blue);
+        }
+      }
+    }
+    &--bottom {
+      & > .nav__link {
+        & > .nav__anchor {
           color: white;
         }
       }
