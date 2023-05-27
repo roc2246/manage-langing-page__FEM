@@ -232,7 +232,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .blurb {
   display: flex;
