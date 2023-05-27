@@ -1,6 +1,6 @@
 .nav {
-  margin-left: maxSCSS(23px, 165px);
-  margin-right: maxSCSS(23px, 165px);
+  margin-left: clampSCSS(23px, 4%, 165px);
+  margin-right: clampSCSS(23px, 4%, 165px);
   &__top {
     margin-top: maxSCSS(39px, 56px);
   }

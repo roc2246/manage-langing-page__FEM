@@ -3,14 +3,19 @@
   @return $remValue;
 }
 
+@function getVW($value, $resolution) {
+  @return ($value / map-get($map: $layout, $key: $resolution) * 100) + vw;
+}
+
 @function maxSCSS($min-value, $max-value) {
   $input1: rem($min-value);
-  $input2: (
-     ( $max-value /
-        map-get(
-          $map: $layout,
-          $key: desktop,
-        )) * 100
-    ) + vw;
+  $input2: getVW($max-value, desktop);
   @return #{"max(#{$input1}, #{$input2})"};
+}
+
+@function clampSCSS($min-value, $adjust, $max-value) {
+  $input1: rem($min-value);
+  $input2: $adjust;
+  $input3: rem($max-value);
+  @return #{"clamp(#{$input1}, #{$input2},#{$input3})"};
 }

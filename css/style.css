@@ -383,8 +383,8 @@ footer {
     margin-right: auto; }
 
 .nav {
-  margin-left: max(1.4375rem, 11.45833vw);
-  margin-right: max(1.4375rem, 11.45833vw); }
+  margin-left: clamp(1.4375rem, 4%,10.3125rem);
+  margin-right: clamp(1.4375rem, 4%,10.3125rem); }
   .nav__top {
     margin-top: max(2.4375rem, 3.88889vw); }
   .nav__links--top {
