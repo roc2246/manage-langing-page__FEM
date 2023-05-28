@@ -10,10 +10,14 @@
   background-size: 30rem;
   background-position-x: rem(-380px);
   background-position-y: rem(100px);
-
+&__container{
+  width: maxSCSS(308px, 1106px);
+  margin-left: auto;
+  margin-right: auto;
+}
   &__heading {
     display: block;
-    width: 19rem;
+    width: maxSCSS(304px, 434px);
   }
 
   &__btn {

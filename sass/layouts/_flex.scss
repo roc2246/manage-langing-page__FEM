@@ -1,7 +1,7 @@
 .nav {
   display: flex;
-  &__top{
-  flex-direction: row;
+  &__top {
+    flex-direction: row;
     justify-content: space-between;
   }
   &__bottom {
@@ -38,7 +38,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: rem(53px); 
+  gap: rem(53px);
 }
 
 .reasons {
@@ -59,17 +59,27 @@
     justify-content: center;
   }
 }
-.testimonial{
+.testimonial {
   flex-shrink: 0;
 }
 
 .CTA {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: rem(24px);
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(24px);
+  }
+  @media (min-width: 604px) {
+    &__container {
+      justify-content: space-between;
+      // gap: unset;
+    }
+  }
 }
+
+
 
 footer {
   display: flex;
@@ -77,5 +87,3 @@ footer {
   flex-wrap: wrap-reverse;
   justify-content: center;
 }
-
-

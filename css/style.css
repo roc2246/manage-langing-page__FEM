@@ -87,6 +87,10 @@ p {
 .CTA__heading {
   text-align: center; }
 
+@media (min-width: 604px) {
+  .CTA__heading {
+    text-align: left; } }
+
 .copyright__paragraph {
   text-align: center; }
 
@@ -259,9 +263,13 @@ p {
   background-size: 30rem;
   background-position-x: -23.75rem;
   background-position-y: 6.25rem; }
+  .CTA__container {
+    width: max(19.25rem, 76.80556vw);
+    margin-left: auto;
+    margin-right: auto; }
   .CTA__heading {
     display: block;
-    width: 19rem; }
+    width: max(19rem, 30.13889vw); }
   .CTA__btn {
     display: block;
     align-self: center; }
@@ -319,12 +327,16 @@ p {
 .testimonial {
   flex-shrink: 0; }
 
-.CTA {
+.CTA__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem; }
+
+@media (min-width: 604px) {
+  .CTA__container {
+    justify-content: space-between; } }
 
 footer {
   display: flex;

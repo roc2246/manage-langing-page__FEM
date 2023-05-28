@@ -1,28 +1,34 @@
 @mixin textAlign($block) {
   .#{$block} {
-    @if ($block == CTA)  or ($block == testimonials){
+    @if ($block == CTA) or ($block == testimonials) {
       &__heading {
         text-align: center;
       }
-    } @else if ($block == copyright){
-        &__paragraph {
-            text-align: center;
-          }
+    } @else if ($block == copyright) {
+      &__paragraph {
+        text-align: center;
+      }
     } @else {
       &__heading,
       &__paragraph {
         text-align: center;
       }
+    }
 
-      @if($block == hero) or ($block == blurb){
-         @media (min-width: 730px) {
-        &__heading,
-        &__paragraph {
-          text-align: left;
+      @if ($block == hero) or ($block == blurb) {
+        @media (min-width: 730px) {
+          &__heading,
+          &__paragraph {
+            text-align: left;
+          }
+        }
+      } @else if ($block == CTA) {
+        @media (min-width: 604px) {
+          &__heading {
+            text-align: left;
+          }
         }
       }
-      }
-     
     }
   }
-}
+
