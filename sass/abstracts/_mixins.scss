@@ -32,3 +32,34 @@
     }
   }
 
+  @mixin bottomNavLinks() {
+    & > .nav__link:nth-child(1),
+    & > .nav__link:nth-child(5) {
+      grid-row: 1/2;
+    }
+    & > .nav__link:nth-child(2),
+    & > .nav__link:nth-child(6) {
+      grid-row: 3/4;
+    }
+    & > .nav__link:nth-child(3),
+    & > .nav__link:nth-child(7) {
+      grid-row: 5/6;
+    }
+    & > .nav__link:nth-child(4) {
+      grid-row: 7/8;
+    }
+
+    & > .nav__link:nth-child(1),
+    & > .nav__link:nth-child(2),
+    & > .nav__link:nth-child(3),
+    & > .nav__link:nth-child(4) {
+      grid-column: 1/2;
+    }
+
+    & > .nav__link:nth-child(5),
+    & > .nav__link:nth-child(6),
+    & > .nav__link:nth-child(7) {
+      grid-column: 2/3;
+    }
+  }
+

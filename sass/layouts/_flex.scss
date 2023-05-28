@@ -1,13 +1,8 @@
 .nav {
-  display: flex;
   &__top {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  &__bottom {
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
   }
   &__links {
     display: flex;
@@ -74,16 +69,7 @@
   @media (min-width: 604px) {
     &__container {
       justify-content: space-between;
-      // gap: unset;
     }
   }
 }
 
-
-
-footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-}
