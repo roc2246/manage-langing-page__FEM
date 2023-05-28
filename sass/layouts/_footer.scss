@@ -4,17 +4,11 @@ footer {
   padding-bottom: rem(31px);
 }
 
-.container{
-  width: maxSCSS(328px, 1106px);
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .submit-email {
-  height: rem(85px);
-  &__input {
-    width: rem(238px);
-  }
+  width: rem(326px);
+  margin-left: auto;
+margin-right: auto;
+
   &__btn{
     width: rem(80px);
   }

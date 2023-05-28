@@ -14,7 +14,6 @@ a {
 
 input{
   border-radius: 2rem;
-  height: rem(51px);
   padding-left: 1rem;
 }
 
@@ -23,6 +22,7 @@ button {
   background-color: transparent;
   font-weight: var(--font-weights-boldest);
   border: none;
+  line-height: 0;
 }
 
 h1,
@@ -31,9 +31,7 @@ h3 {
   color: var(--colors-dark-blue);
   margin: 0;
 }
-// h1 {
-//   font-size: rem(35px);
-// }
+
 h2 {
   font-size: rem(28.5px);
   line-height: 2.75rem;

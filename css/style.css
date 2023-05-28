@@ -40,14 +40,14 @@ a {
 
 input {
   border-radius: 2rem;
-  height: 3.1875rem;
   padding-left: 1rem; }
 
 button {
   cursor: pointer;
   background-color: transparent;
   font-weight: var(--font-weights-boldest);
-  border: none; }
+  border: none;
+  line-height: 0; }
 
 h1,
 h2,
@@ -140,7 +140,8 @@ p {
 
 .btn {
   padding: 1.125rem 2rem;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  height: 2.75rem; }
   .btn--orange {
     background-color: var(--colors-bright-red);
     color: white; }
@@ -338,15 +339,10 @@ footer {
   padding-top: 3.125rem;
   padding-bottom: 1.9375rem; }
 
-.container {
-  width: max(20.5rem, 76.80556vw);
+.submit-email {
+  width: 20.375rem;
   margin-left: auto;
   margin-right: auto; }
-
-.submit-email {
-  height: 5.3125rem; }
-  .submit-email__input {
-    width: 14.875rem; }
   .submit-email__btn {
     width: 5rem; }
   .submit-email__error-txt {
@@ -363,7 +359,6 @@ footer {
 
 footer {
   display: grid;
-  justify-content: center;
   row-gap: 2rem; }
 
 .nav__bottom {
@@ -374,7 +369,6 @@ footer {
 .nav__links--bottom {
   grid-row: 1/2;
   display: grid;
-  justify-content: center;
   row-gap: 0.375rem;
   column-gap: 6.8125rem; }
   .nav__links--bottom > .nav__link:nth-child(1),
@@ -404,7 +398,9 @@ footer {
 .submit-email {
   grid-row: 1/2;
   display: grid;
-  grid-template-rows: 3.5625rem auto;
+  justify-content: center;
+  grid-template-rows: auto 1.25rem;
+  grid-template-columns: 14.875rem auto;
   column-gap: 0.5rem; }
   .submit-email__input {
     grid-column: 1/2; }
@@ -456,7 +452,9 @@ footer {
     display: flex; } }
 
 .nav__links--bottom {
-  width: 16.5rem; }
+  width: 16.5rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 .nav__links--social-media {
   width: 18.5rem; }
