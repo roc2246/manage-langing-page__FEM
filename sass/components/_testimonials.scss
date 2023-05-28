@@ -1,7 +1,16 @@
 .testimonials {
   margin-top: rem(82px);
+  &__container{
+    width: maxSCSS(375px, 1440px);
+    overflow-x: hidden;
+  }
   &__selectors{
     margin-top: rem(25px);
+  }
+  @media (min-width: 590px) {
+    &__selectors{
+      display: none !important;
+    }
   }
   &__btn {
     display: block;
@@ -11,12 +20,8 @@
   }
 }
 
-.testimonial:not(:nth-child(2)) {
-  display: none;
-}
-
 .testimonial {
-  width: minSCSS(360px, 539px);
+  width: minSCSS(350px, 539px);
   margin-top: rem(69px);
   &__img {
     z-index: 1;
@@ -27,9 +32,13 @@
   }
   &__info {
     background-color: var(--colors-very-light-gray);
-    padding-left: minSCSS(38px, 70px);
-    padding-right: minSCSS(38px, 70px);
+    padding-left: minSCSS(38px, 68px);
+    padding-right: minSCSS(38px, 68px);
     padding-bottom: rem(47px);
     padding-top: rem(65px);
   }
+}
+
+.testimonial:nth-child(4){
+  display: none;
 }

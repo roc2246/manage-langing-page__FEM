@@ -51,13 +51,16 @@
   &__container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: rem(9px);
+    justify-content: space-evenly;
+    gap: rem(31px);
   }
   &__selectors {
     display: flex;
     justify-content: center;
   }
+}
+.testimonial{
+  flex-shrink: 0;
 }
 
 .CTA {
