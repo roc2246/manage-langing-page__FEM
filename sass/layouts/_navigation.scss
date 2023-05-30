@@ -5,10 +5,31 @@
     margin-right: auto;
     width: maxSCSS(327px, 1106px);
   }
-  &__social-media{
+  @media (min-width: 800px) {
+    &__bottom {
+      margin-right: auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    &__bottom {
+      margin-right: rem(170px);
+    }
+  }
+
+  &__social-media {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+  @media (min-width: 800px) {
+    &__social-media {
+      margin-left: unset;
+    }
+  }
+  @media (min-width: 1200px) {
+    &__social-media {
+      margin-left: unset;
+    }
   }
   &__links {
     &--top {
@@ -21,16 +42,26 @@
     }
     &--bottom {
       width: rem(264px);
-     margin-left: auto;
-     margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
     &--social-media {
       width: rem(296px);
     }
-  }
-  &__img {
-    width: rem(32px);
-    height: auto;
+    @media (min-width: 1200px) {
+      &--social-media {
+        width: rem(154px);
+      }
+    }
+    &__img {
+      width: rem(32px);
+      height: auto;
+    }
+    @media (min-width: 1200px) {
+      &__img {
+        width: rem(20px);
+      }
+    }
   }
   &__btn {
     display: none;

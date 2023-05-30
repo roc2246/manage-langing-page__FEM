@@ -7,6 +7,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+  @media (min-width: 800px){
+    &--bottom {
+   margin-left: unset;
+ }
+ }
   @media (min-width: 1200px){
      &--bottom {
     margin-bottom: auto;
