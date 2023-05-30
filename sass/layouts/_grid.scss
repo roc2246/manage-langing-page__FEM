@@ -23,14 +23,13 @@ footer {
     justify-content: center;
     row-gap: 2rem;
   }
+  &__social-media{
+    grid-row: 3/4;
+  }
   @media (min-width: 800px) {
     &__social-media{
       grid-row: 2/3;
       grid-column: 1/2;
-     
-      margin-top: auto;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
   &__links {
@@ -42,9 +41,6 @@ footer {
       column-gap: rem(109px);
       @include bottomNavLinks();
     }
-    // &--social-media {
-    //   grid-row: 2/3;
-    // }
   }
 }
 

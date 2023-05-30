@@ -368,13 +368,13 @@ footer {
   justify-content: center;
   row-gap: 2rem; }
 
+.nav__social-media {
+  grid-row: 3/4; }
+
 @media (min-width: 800px) {
   .nav__social-media {
     grid-row: 2/3;
-    grid-column: 1/2;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto; } }
+    grid-column: 1/2; } }
 
 .nav__links--bottom {
   grid-row: 1/2;
@@ -462,6 +462,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: max(20.4375rem, 76.80556vw); }
+
+.nav__social-media {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto; }
 
 .nav__links--top {
   display: none; }
