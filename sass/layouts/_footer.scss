@@ -2,6 +2,8 @@ footer {
   background-color: var(--colors-very-dark-blue);
   padding-top: rem(50px);
   padding-bottom: rem(31px);
+ padding-left: maxSCSS(38px, 168px);
+ padding-right: maxSCSS(38px, 168px);
 }
 
 .submit-email {
@@ -16,3 +18,11 @@ margin-right: auto;
     display: none;
   }
 }
+
+@media (min-width: 1200px) {
+  .copyright {
+    margin-left: auto;
+  }
+}
+
+
