@@ -8,8 +8,7 @@
   background-image: url("../images/bg-tablet-pattern-CTA.svg");
   background-repeat: no-repeat;
   background-size: 30rem;
-  background-position-x: rem(-380px);
-  background-position-y: rem(100px);
+  background-position: left rem(-380px) top rem(100px);
 &__container{
   width: maxSCSS(308px, 1106px);
   margin-left: auto;
@@ -25,3 +24,22 @@
     align-self: center;
   }
 }
+
+@media (min-width: 605px) {
+  .CTA{
+  background-image: url("../images/bg-tablet-pattern-CTA.svg");
+  background-size: 45rem;
+  background-position: left rem(100px) top rem(-50px);
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .CTA{
+  background-image: url("../images/bg-tablet-pattern-CTA.svg"), url("../images/bg-tablet-pattern-CTA.svg");
+  background-size: 45rem, 30rem;
+  background-position: left rem(100px) top rem(-50px), top rem(-250px) right rem(-290px);
+
+  }
+}
+
