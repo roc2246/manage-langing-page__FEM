@@ -29,8 +29,21 @@ html {
 
 body {
   margin: 0;
-  background-image: url("../images/bg-tablet-pattern.svg");
+  background-image: url("../images/bg-tablet-pattern.svg"),
+    url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: maxSCSS(440px, 820px), 20rem;
-  background-position: top rem(-100px) right rem(-140px);
+  background-position: top rem(-100px) right rem(-140px), top rem(440px) right rem(-200px);
+}
+
+@media (min-width: 822px) {
+  body {
+    background-image: url("../images/bg-tablet-pattern.svg"),
+    url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: maxSCSS(440px, 820px), 55rem;
+  background-position: top rem(-100px) right rem(-140px), top rem(1100px) left rem(-500px);
+     
+  }
+  
 }

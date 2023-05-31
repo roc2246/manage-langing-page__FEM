@@ -21,10 +21,17 @@ html {
 
 body {
   margin: 0;
-  background-image: url("../images/bg-tablet-pattern.svg");
+  background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: max(27.5rem, 56.94444vw), 20rem;
-  background-position: top -6.25rem right -8.75rem; }
+  background-position: top -6.25rem right -8.75rem, top 27.5rem right -12.5rem; }
+
+@media (min-width: 822px) {
+  body {
+    background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: max(27.5rem, 56.94444vw), 55rem;
+    background-position: top -6.25rem right -8.75rem, top 68.75rem left -31.25rem; } }
 
 ul {
   margin: 0;
