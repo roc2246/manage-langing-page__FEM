@@ -13,9 +13,21 @@
   @return #{"min(#{$input1}, #{$input2})"};
 }
 
+@function min($min-value, $max-value) {
+  $input1: $min-value;
+  $input2: $max-value;
+  @return #{"min(#{$input1}, #{$input2})"};
+}
+
 @function maxSCSS($min-value, $max-value) {
   $input1: rem($min-value);
   $input2: getVW($max-value, desktop);
+  @return #{"max(#{$input1}, #{$input2})"};
+}
+
+@function max($min-value, $max-value) {
+  $input1: $min-value;
+  $input2: $max-value;
   @return #{"max(#{$input1}, #{$input2})"};
 }
 
@@ -23,5 +35,12 @@
   $input1: rem($min-value);
   $input2: $adjust;
   $input3: rem($max-value);
+  @return #{"clamp(#{$input1}, #{$input2},#{$input3})"};
+}
+
+@function clamp($min-value, $adjust, $max-value) {
+  $input1: $min-value;
+  $input2: $adjust;
+  $input3: $max-value;
   @return #{"clamp(#{$input1}, #{$input2},#{$input3})"};
 }

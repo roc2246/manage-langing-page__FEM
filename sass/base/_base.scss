@@ -29,10 +29,8 @@ html {
 
 body {
   margin: 0;
-  background-image: url("../images/bg-tablet-pattern.svg"),
-    url("../images/bg-tablet-pattern.svg");
+  background-image: url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 30rem, 20rem;
-  background-position-x: rem(80px), rem(240px);
-  background-position-y: rem(-160px), rem(448px);
+  background-size: maxSCSS(440px, 820px), 20rem;
+  background-position: top rem(-100px) right rem(-140px);
 }

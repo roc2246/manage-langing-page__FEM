@@ -21,11 +21,10 @@ html {
 
 body {
   margin: 0;
-  background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
+  background-image: url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 30rem, 20rem;
-  background-position-x: 5rem, 15rem;
-  background-position-y: -10rem, 28rem; }
+  background-size: max(27.5rem, 56.94444vw), 20rem;
+  background-position: top -6.25rem right -8.75rem; }
 
 ul {
   margin: 0;
