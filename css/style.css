@@ -524,6 +524,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: max(20.4375rem, 76.80556vw); }
+  .nav__top--mobile {
+    display: none; }
 
 @media (min-width: 800px) {
   .nav__bottom {
