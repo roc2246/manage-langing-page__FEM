@@ -4,8 +4,26 @@
     margin-left: auto;
     margin-right: auto;
     width: maxSCSS(327px, 1106px);
-    &--mobile{
-      display: none;
+  }
+  &--mobile {
+    // position: fixed;
+
+    z-index: 2;
+    padding-top: maxSCSS(39px, 56px);
+    // left: 50%;
+    // right: 50%;
+    top: 0;
+    margin-top: unset;
+
+    height: 100vh;
+    // width: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    & > .nav__links {
+      margin-top: rem(42px);
+      background-color: white;
+      width: maxSCSS(327px, 1106px);
+
     }
   }
   @media (min-width: 800px) {

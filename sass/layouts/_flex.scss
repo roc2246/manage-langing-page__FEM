@@ -4,6 +4,15 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  &--mobile {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    & > .nav__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
   &__links {
     display: flex;
     justify-content: center;
@@ -72,4 +81,3 @@
     }
   }
 }
-
