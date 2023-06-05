@@ -65,9 +65,24 @@ window.addEventListener("resize", (e) => {
     toggleStyle("add");
     appendEle("create");
   }
-
 });
 
 const testimonial = document.getElementsByClassName("testimonial");
-testimonial[1].scrollIntoView()
+const selector = document.getElementsByClassName("testimonials__selector");
+testimonial[1].scrollIntoView();
 
+for (let x = 0; x < selector.length; x++) {
+  const className = "testimonials__selector--selected";
+  selector[x].addEventListener("click", (e) => {
+    Object.keys(selector).forEach((btn) => {
+      if (selector[btn].classList.contains(className)) {
+        selector[btn].classList.remove(className);
+      }
+    });
+    e.target.classList.add(className);
+    testimonial[x].scrollIntoView()
+  });
+}
+
+
+// Add drag event for selector state change
