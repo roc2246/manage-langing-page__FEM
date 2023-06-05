@@ -182,7 +182,7 @@ p {
       margin-left: unset; } }
 
 .testimonials__selector {
-  width: 0.5625rem;
+  width: 0.875rem;
   height: 0.875rem;
   transform: scale(70%);
   border: solid;
