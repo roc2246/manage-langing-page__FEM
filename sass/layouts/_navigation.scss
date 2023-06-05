@@ -19,15 +19,11 @@
   &--mobile {
     width: maxSCSS(327px, 1106px);
     margin-top: unset;
- 
-
     & > .nav__toggle {
       margin-left: auto;
     }
-
     & > .nav__links {
       width: maxSCSS(327px, 1106px);
-
       margin-top: rem(42px);
       background-color: white;
     }
