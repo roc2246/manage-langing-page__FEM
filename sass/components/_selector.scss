@@ -1,7 +1,7 @@
 .testimonials {
   &__selector {
-    width: 9px;
-    height: 14px;
+    width: rem(9px);
+    height: rem(14px);
     transform: scale(70%);
     border: solid;
     border-radius: 50%;
