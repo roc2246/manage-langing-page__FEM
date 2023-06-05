@@ -182,8 +182,8 @@ p {
       margin-left: unset; } }
 
 .testimonials__selector {
-  width: 0.5625rem;
-  height: 0.875rem;
+  width: 9px;
+  height: 14px;
   transform: scale(70%);
   border: solid;
   border-radius: 50%;
