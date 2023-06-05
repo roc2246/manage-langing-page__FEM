@@ -6,6 +6,17 @@
 @include textAlign(copyright);
 
 .nav {
+  &--mobile {
+    & > .nav__links {
+      & > .nav__link {
+        & > .nav__anchor {
+          font-weight: var(--font-weights-boldest);
+          font-size: 1rem;
+          color: var(--colors-dark-blue);
+        }
+      }
+    }
+  }
   &__links {
     &--bottom {
       white-space: nowrap;
@@ -26,8 +37,8 @@
 }
 
 .hero {
-  &__heading{
-  font-size: maxSCSS(35px, 40px);
+  &__heading {
+    font-size: maxSCSS(35px, 40px);
   }
   &__paragraph {
     font-size: rem(14px);

@@ -100,6 +100,11 @@ p {
 .copyright__paragraph {
   text-align: center; }
 
+.nav--mobile > .nav__links > .nav__link > .nav__anchor {
+  font-weight: var(--font-weights-boldest);
+  font-size: 1rem;
+  color: var(--colors-dark-blue); }
+
 .nav__links--bottom {
   white-space: nowrap; }
   .nav__links--bottom > .nav__link > .nav__anchor {
@@ -562,6 +567,8 @@ footer {
   .nav--mobile > .nav__links {
     width: max(20.4375rem, 76.80556vw);
     margin-top: 2.625rem;
+    padding-top: 2.5625rem;
+    padding-bottom: 2.5625rem;
     background-color: white; }
 
 @media (min-width: 800px) {
