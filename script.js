@@ -1,37 +1,68 @@
-const mobileIcon = (icon) => document.getElementsByClassName(`nav__${icon}`)[0];
-const toggle = document.getElementsByClassName("nav__toggle")[0];
-const nav = document.getElementsByClassName("nav__top")[0];
-const hero = document.getElementsByClassName("hero")[0]
+const mobileEle = (ele) => document.getElementsByClassName(`nav__${ele}`)[0];
+const hero = document.getElementsByClassName("hero")[0];
+const header = document.getElementsByTagName("header")[0];
+let isNavOpen = false;
 
-toggle.addEventListener("click", () => {
-  if (
-    mobileIcon("close").style.display === "" ||
-    mobileIcon("close").style.display === "none"
-  ) {
-    mobileIcon("open").style.display = "none";
-    mobileIcon("close").style.display = "inline";
+function navCondition() {
+  return (
+    mobileEle("close").style.display === "" ||
+    mobileEle("close").style.display === "none"
+  );
+}
 
-    nav.classList.add("nav--mobile");
-    hero.classList.add("hero--mobile")
+function toggleIcon(open, close) {
+  mobileEle("open").style.display = open;
+  mobileEle("close").style.display = close;
+}
 
-    const links = document.getElementsByClassName("nav--mobile")[0]
-    const container = document.createElement("div")
-    container.appendChild(links)
-    container.className = "mobile-container"
-    document.getElementsByTagName("header")[0].append(container)
+function toggleStyle(action) {
+  mobileEle("top").classList[action]("nav--mobile");
+  hero.classList[action]("hero--mobile");
+}
 
-  } else {
-    mobileIcon("open").style.display = "inline";
-    mobileIcon("close").style.display = "none";
+function createContainer() {
+  const container = document.createElement("div");
+  container.className = "mobile-container";
+  return {
+    create: container,
+    var: document.getElementsByClassName("mobile-container")[0],
+  };
+}
 
-    nav.classList.remove("nav--mobile");
-    hero.classList.remove("hero--mobile")
+function appendEle(prop) {
+  const container = createContainer()[prop];
+  if (prop === "create") {
+    container.appendChild(mobileEle("top"));
+    header.append(container);
+  } else if (prop === "var") {
+    header.appendChild(mobileEle("top"));
+    container.remove();
+  }
+}
 
-    const links = document.getElementsByClassName("nav__top")[0]
-    const header = document.getElementsByTagName("header")[0]
-    header.appendChild(links)
-    const container = document.getElementsByClassName("mobile-container")[0]
-    container.remove()
+mobileEle("toggle").addEventListener("click", () => {
+  if (navCondition()) {
+    isNavOpen = true;
+    toggleIcon("none", "inline");
+    toggleStyle("add");
+    appendEle("create");
+  } else if (!navCondition()) {
+    isNavOpen = false;
+    toggleIcon("inline", "none");
+    toggleStyle("remove");
+    appendEle("var");
+  }
+});
 
+window.addEventListener("resize", (e) => {
+  const width = e.target.outerWidth;
+  const isNavClassOpen = mobileEle("top").classList.contains("nav--mobile");
+
+  if (width > 709 && isNavClassOpen) {
+    toggleStyle("remove");
+    appendEle("var");
+  } else if (width < 710 && isNavOpen === true && !isNavClassOpen) {
+    toggleStyle("add");
+    appendEle("create");
   }
 });
