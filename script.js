@@ -65,4 +65,9 @@ window.addEventListener("resize", (e) => {
     toggleStyle("add");
     appendEle("create");
   }
+
 });
+
+const testimonial = document.getElementsByClassName("testimonial");
+testimonial[1].scrollIntoView()
+

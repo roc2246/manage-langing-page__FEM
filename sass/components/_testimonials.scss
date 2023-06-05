@@ -2,7 +2,12 @@
   margin-top: rem(82px);
   &__container{
     width: maxSCSS(375px, 1440px);
-    overflow-x: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+   }
   }
   &__selectors{
     margin-top: rem(25px);
@@ -23,6 +28,7 @@
 .testimonial {
   width: minSCSS(350px, 539px);
   margin-top: rem(69px);
+  scroll-snap-align: center;
   &__img {
     z-index: 1;
     width: rem(72px);
@@ -37,8 +43,9 @@
     padding-bottom: rem(47px);
     padding-top: rem(65px);
   }
+  &__space{
+    width: rem(31px);
+  }
+
 }
 
-.testimonial:nth-child(4){
-  display: none;
-}
