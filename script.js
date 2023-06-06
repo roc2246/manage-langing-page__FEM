@@ -69,20 +69,64 @@ window.addEventListener("resize", (e) => {
 
 const testimonial = document.getElementsByClassName("testimonial");
 const selector = document.getElementsByClassName("testimonials__selector");
-testimonial[1].scrollIntoView();
+let focusNo = 1;
+testimonial[focusNo].scrollIntoView();
 
 for (let x = 0; x < selector.length; x++) {
   const className = "testimonials__selector--selected";
+
   selector[x].addEventListener("click", (e) => {
+    focusNo = x;
+
+    console.log(focusNo)
     Object.keys(selector).forEach((btn) => {
       if (selector[btn].classList.contains(className)) {
         selector[btn].classList.remove(className);
       }
     });
-    e.target.classList.add(className);
-    testimonial[x].scrollIntoView()
+    selector[x].classList.add(className);
+    testimonial[x].scrollIntoView();
   });
 }
 
+const testimonialCont = document.getElementsByClassName(
+  "testimonials__container"
+)[0];
+let startCoord;
+let endCoord;
 
-// Add drag event for selector state change
+testimonialCont.addEventListener("touchstart", (e) => {
+  startCoord = e.touches[0].clientX;
+});
+
+// testimonialCont.addEventListener("touchend", (e) => {
+//   const scrollDist = testimonialCont.scrollLeft
+//   const sensitivity = 218
+//   endCoord = e.changedTouches[0].clientX;
+
+//   const className = "testimonials__selector--selected";
+
+//   if (startCoord - endCoord > scrollDist) {
+//     focusNo++;
+//     if (focusNo === 4) focusNo = 3;
+
+//     Object.keys(selector).forEach((btn) => {
+//       if (selector[btn].classList.contains(className)) {
+//         selector[btn].classList.remove(className);
+//       }
+//       selector[focusNo].classList.add(className);
+//     });
+//   }
+
+//   if (endCoord - startCoord > scrollDist) {
+//     focusNo--;
+//     if (focusNo === -1) focusNo = 0;
+
+//     Object.keys(selector).forEach((btn) => {
+//       if (selector[btn].classList.contains(className)) {
+//         selector[btn].classList.remove(className);
+//       }
+//     });
+//     selector[focusNo].classList.add(className);
+//   }
+// });

@@ -199,7 +199,8 @@ p {
     width: max(23.4375rem, 100vw);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none; }
+    scrollbar-width: none;
+    scroll-behavior: smooth; }
     .testimonials__container::-webkit-scrollbar {
       display: none; }
   .testimonials__selectors {

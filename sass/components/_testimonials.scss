@@ -5,6 +5,7 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    scroll-behavior: smooth;
     &::-webkit-scrollbar {
       display: none;
    }
