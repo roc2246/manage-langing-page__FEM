@@ -103,17 +103,46 @@ testimonialCont.addEventListener("scroll", () => {
   const scrollLength = testimonialCont.scrollLeft;
   const width = testimonial[0].offsetWidth;
 
-  console.log(scrollLength);
-  // console.log(width)
+
+  const className = "testimonials__selector--selected";
 
 
+  if (scrollLength < 220) {
+    Object.keys(selector).forEach((btn) => {
+      if (selector[btn].classList.contains(className)) {
+        selector[btn].classList.remove(className);
+      }
+    });
+    selector[0].classList.add(className);
+  }
 
-  // Object.keys(selector).forEach((btn) => {
-  //   if (selector[btn].classList.contains(className)) {
-  //     selector[btn].classList.remove(className);
-  //   }
-  // });
-  // selector[x].classList.add(className);
+  if (scrollLength >= 220) {
+    Object.keys(selector).forEach((btn) => {
+      if (selector[btn].classList.contains(className)) {
+        selector[btn].classList.remove(className);
+      }
+    });
+    selector[1].classList.add(className);
+  }
 
+
+  if (scrollLength >= 615) {
+    Object.keys(selector).forEach((btn) => {
+      if (selector[btn].classList.contains(className)) {
+        selector[btn].classList.remove(className);
+      }
+    });
+    selector[2].classList.add(className);
+  }
+
+
+  if (scrollLength >= 1011) {
+    Object.keys(selector).forEach((btn) => {
+      if (selector[btn].classList.contains(className)) {
+        selector[btn].classList.remove(className);
+      }
+    });
+    selector[3].classList.add(className);
+  }
 
 });
