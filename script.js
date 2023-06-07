@@ -103,11 +103,10 @@ testimonialCont.addEventListener("scroll", () => {
   const scrollLength = testimonialCont.scrollLeft;
   const width = testimonial[0].offsetWidth;
 
+  console.log(width)
 
   const className = "testimonials__selector--selected";
-
-
-  if (scrollLength < 220) {
+  if (scrollLength < width) {
     Object.keys(selector).forEach((btn) => {
       if (selector[btn].classList.contains(className)) {
         selector[btn].classList.remove(className);
@@ -116,7 +115,7 @@ testimonialCont.addEventListener("scroll", () => {
     selector[0].classList.add(className);
   }
 
-  if (scrollLength >= 220) {
+  if (scrollLength >= width) {
     Object.keys(selector).forEach((btn) => {
       if (selector[btn].classList.contains(className)) {
         selector[btn].classList.remove(className);
@@ -126,7 +125,7 @@ testimonialCont.addEventListener("scroll", () => {
   }
 
 
-  if (scrollLength >= 615) {
+  if (scrollLength >= width * 2) {
     Object.keys(selector).forEach((btn) => {
       if (selector[btn].classList.contains(className)) {
         selector[btn].classList.remove(className);
@@ -136,7 +135,7 @@ testimonialCont.addEventListener("scroll", () => {
   }
 
 
-  if (scrollLength >= 1011) {
+  if (scrollLength >= width * 3) {
     Object.keys(selector).forEach((btn) => {
       if (selector[btn].classList.contains(className)) {
         selector[btn].classList.remove(className);
