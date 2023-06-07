@@ -75,58 +75,45 @@ testimonial[focusNo].scrollIntoView();
 for (let x = 0; x < selector.length; x++) {
   const className = "testimonials__selector--selected";
 
-  selector[x].addEventListener("click", (e) => {
+  selector[x].addEventListener("click", () => {
     focusNo = x;
 
-    console.log(focusNo)
     Object.keys(selector).forEach((btn) => {
       if (selector[btn].classList.contains(className)) {
         selector[btn].classList.remove(className);
       }
     });
+
+    testimonial[focusNo].scrollIntoView();
     selector[x].classList.add(className);
-    testimonial[x].scrollIntoView();
   });
 }
 
 const testimonialCont = document.getElementsByClassName(
   "testimonials__container"
 )[0];
-let startCoord;
-let endCoord;
+let touchstart;
+let touchend;
 
 testimonialCont.addEventListener("touchstart", (e) => {
-  startCoord = e.touches[0].clientX;
+  touchstart = e.touches[0].clientWidth;
 });
 
-// testimonialCont.addEventListener("touchend", (e) => {
-//   const scrollDist = testimonialCont.scrollLeft
-//   const sensitivity = 218
-//   endCoord = e.changedTouches[0].clientX;
+testimonialCont.addEventListener("scroll", () => {
+  const scrollLength = testimonialCont.scrollLeft;
+  const width = testimonial[0].offsetWidth;
 
-//   const className = "testimonials__selector--selected";
+  console.log(scrollLength);
+  // console.log(width)
 
-//   if (startCoord - endCoord > scrollDist) {
-//     focusNo++;
-//     if (focusNo === 4) focusNo = 3;
 
-//     Object.keys(selector).forEach((btn) => {
-//       if (selector[btn].classList.contains(className)) {
-//         selector[btn].classList.remove(className);
-//       }
-//       selector[focusNo].classList.add(className);
-//     });
-//   }
 
-//   if (endCoord - startCoord > scrollDist) {
-//     focusNo--;
-//     if (focusNo === -1) focusNo = 0;
+  // Object.keys(selector).forEach((btn) => {
+  //   if (selector[btn].classList.contains(className)) {
+  //     selector[btn].classList.remove(className);
+  //   }
+  // });
+  // selector[x].classList.add(className);
 
-//     Object.keys(selector).forEach((btn) => {
-//       if (selector[btn].classList.contains(className)) {
-//         selector[btn].classList.remove(className);
-//       }
-//     });
-//     selector[focusNo].classList.add(className);
-//   }
-// });
+
+});
