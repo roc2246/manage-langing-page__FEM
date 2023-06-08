@@ -112,11 +112,9 @@ testimonialCont.addEventListener("scroll", () => {
 
     if(x=== 0){
       conditional = scrollLength < width
-    } else if(x === 1) {
-      conditional = scrollLength >= width
-    } else if(x > 1){
+    } else if(x >= 1) {
       conditional = scrollLength >= width * x
-    }
+    } 
     targetActive(conditional, x)
   }
 
