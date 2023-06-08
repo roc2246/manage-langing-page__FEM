@@ -68,9 +68,15 @@ window.addEventListener("resize", (e) => {
 });
 
 const testimonial = document.getElementsByClassName("testimonial");
+const testimonialCont = document.getElementsByClassName(
+  "testimonials__container"
+)[0];
 const selector = document.getElementsByClassName("testimonials__selector");
+
 let focusNo = 1;
 testimonial[focusNo].scrollIntoView();
+
+
 
 for (let x = 0; x < selector.length; x++) {
   const className = "testimonials__selector--selected";
@@ -85,34 +91,22 @@ for (let x = 0; x < selector.length; x++) {
     });
 
     testimonial[focusNo].scrollIntoView();
-    selector[x].classList.add(className);
   });
 }
-
-const testimonialCont = document.getElementsByClassName(
-  "testimonials__container"
-)[0];
-let touchstart;
-let touchend;
-
-testimonialCont.addEventListener("touchstart", (e) => {
-  touchstart = e.touches[0].clientWidth;
-});
 
 testimonialCont.addEventListener("scroll", () => {
   const scrollLength = testimonialCont.scrollLeft;
   const width = testimonial[0].offsetWidth;
 
-  console.log(width)
-
   const className = "testimonials__selector--selected";
+
   if (scrollLength < width) {
     Object.keys(selector).forEach((btn) => {
       if (selector[btn].classList.contains(className)) {
         selector[btn].classList.remove(className);
       }
     });
-    selector[0].classList.add(className);
+    focusNo = 0
   }
 
   if (scrollLength >= width) {
@@ -121,7 +115,7 @@ testimonialCont.addEventListener("scroll", () => {
         selector[btn].classList.remove(className);
       }
     });
-    selector[1].classList.add(className);
+    focusNo = 1
   }
 
 
@@ -131,7 +125,7 @@ testimonialCont.addEventListener("scroll", () => {
         selector[btn].classList.remove(className);
       }
     });
-    selector[2].classList.add(className);
+    focusNo = 2
   }
 
 
@@ -141,7 +135,8 @@ testimonialCont.addEventListener("scroll", () => {
         selector[btn].classList.remove(className);
       }
     });
-    selector[3].classList.add(className);
+    focusNo = 3
   }
+  selector[focusNo].classList.add(className);
 
 });
