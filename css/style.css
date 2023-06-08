@@ -196,11 +196,14 @@ p {
 .testimonials {
   margin-top: 5.125rem; }
   .testimonials__container {
+    cursor: grab;
     width: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     scroll-behavior: smooth; }
+    .testimonials__container--active {
+      cursor: grabbing; }
     .testimonials__container::-webkit-scrollbar {
       display: none; }
   .testimonials__selectors {
@@ -215,10 +218,12 @@ p {
     margin-right: auto; }
 
 .testimonial {
+  user-select: none;
   width: min(93.33333vw, 33.6875rem);
   margin-top: 4.3125rem;
   scroll-snap-align: center; }
   .testimonial__img {
+    pointer-events: none;
     z-index: 1;
     width: 4.5rem;
     height: auto;

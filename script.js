@@ -118,7 +118,33 @@ testimonialCont.addEventListener("scroll", () => {
   selector[focusNo].classList.add(className);
 });
 
-testimonialCont.addEventListener("mousedown", (e)=>{
-  e.preventDefault()
-  testimonialCont.scrollLeft += e.deltaY
-})
+let drag = false;
+
+let init;
+testimonialCont.addEventListener("mousedown", (e) => {
+  init = e.clientX;
+  drag = true;
+});
+testimonialCont.addEventListener("mousemove", (e) => {
+  const width = testimonial[0].offsetWidth;
+  const screenWidth = screen.width
+  const coord = e.clientX;
+  if (drag === true) {
+    testimonialCont.classList.add("testimonials__container--active");
+    if (init > width / 2) {
+    testimonialCont.scrollLeft += width;
+    } else if (init < width / 2) {
+    testimonialCont.scrollLeft -= width - coord;
+    }
+  }
+});
+
+testimonialCont.addEventListener("mouseup", () => {
+  testimonialCont.classList.remove("testimonials__container--active");
+  drag = false;
+});
+
+window.addEventListener("mouseup", () => {
+  testimonialCont.classList.remove("testimonials__container--active");
+  drag = false;
+});

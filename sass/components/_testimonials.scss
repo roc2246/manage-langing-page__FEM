@@ -1,11 +1,15 @@
 .testimonials {
   margin-top: rem(82px);
   &__container{
+    cursor: grab;
     width: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    &--active{
+      cursor: grabbing;
+    }
     &::-webkit-scrollbar {
       display: none;
    }
@@ -27,10 +31,12 @@
 }
 
 .testimonial {
+  user-select: none;
   width: minSCSS(350px, 539px);
   margin-top: rem(69px);
   scroll-snap-align: center;
   &__img {
+    pointer-events: none;
     z-index: 1;
     width: rem(72px);
     height: auto;
