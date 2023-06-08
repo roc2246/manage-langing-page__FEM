@@ -74,7 +74,6 @@ const testimonialCont = document.getElementsByClassName(
 const selector = document.getElementsByClassName("testimonials__selector");
 const className = "testimonials__selector--selected";
 
-
 let focusNo = 1;
 testimonial[focusNo].scrollIntoView();
 
@@ -86,7 +85,7 @@ function removeBtnStyle() {
   });
 }
 
-function targetActive(conditional, no){
+function targetActive(conditional, no) {
   if (conditional) {
     removeBtnStyle();
     focusNo = no;
@@ -105,18 +104,21 @@ testimonialCont.addEventListener("scroll", () => {
   const scrollLength = testimonialCont.scrollLeft;
   const width = testimonial[0].offsetWidth;
 
-  const className = "testimonials__selector--selected";
+  for (let x = 0; x < selector.length; x++) {
+    let conditional;
 
-  for(let x = 0; x< selector.length; x++){
-    let conditional
-
-    if(x=== 0){
-      conditional = scrollLength < width
-    } else if(x >= 1) {
-      conditional = scrollLength >= width * x
-    } 
-    targetActive(conditional, x)
+    if (x === 0) {
+      conditional = scrollLength < width;
+    } else if (x >= 1) {
+      conditional = scrollLength >= width * x;
+    }
+    targetActive(conditional, x);
   }
 
   selector[focusNo].classList.add(className);
 });
+
+testimonialCont.addEventListener("mousedown", (e)=>{
+  e.preventDefault()
+  testimonialCont.scrollLeft += e.deltaY
+})

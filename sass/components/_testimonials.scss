@@ -1,7 +1,7 @@
 .testimonials {
   margin-top: rem(82px);
   &__container{
-    width: maxSCSS(375px, 1440px);
+    width: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;

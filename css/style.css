@@ -196,7 +196,7 @@ p {
 .testimonials {
   margin-top: 5.125rem; }
   .testimonials__container {
-    width: max(23.4375rem, 100vw);
+    width: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
