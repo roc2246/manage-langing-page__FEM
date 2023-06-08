@@ -72,24 +72,31 @@ const testimonialCont = document.getElementsByClassName(
   "testimonials__container"
 )[0];
 const selector = document.getElementsByClassName("testimonials__selector");
+const className = "testimonials__selector--selected";
+
 
 let focusNo = 1;
 testimonial[focusNo].scrollIntoView();
 
+function removeBtnStyle() {
+  Object.keys(selector).forEach((btn) => {
+    if (selector[btn].classList.contains(className)) {
+      selector[btn].classList.remove(className);
+    }
+  });
+}
 
+function targetActive(conditional, no){
+  if (conditional) {
+    removeBtnStyle();
+    focusNo = no;
+  }
+}
 
 for (let x = 0; x < selector.length; x++) {
-  const className = "testimonials__selector--selected";
-
   selector[x].addEventListener("click", () => {
     focusNo = x;
-
-    Object.keys(selector).forEach((btn) => {
-      if (selector[btn].classList.contains(className)) {
-        selector[btn].classList.remove(className);
-      }
-    });
-
+    removeBtnStyle();
     testimonial[focusNo].scrollIntoView();
   });
 }
@@ -100,43 +107,18 @@ testimonialCont.addEventListener("scroll", () => {
 
   const className = "testimonials__selector--selected";
 
-  if (scrollLength < width) {
-    Object.keys(selector).forEach((btn) => {
-      if (selector[btn].classList.contains(className)) {
-        selector[btn].classList.remove(className);
-      }
-    });
-    focusNo = 0
+  for(let x = 0; x< selector.length; x++){
+    let conditional
+
+    if(x=== 0){
+      conditional = scrollLength < width
+    } else if(x === 1) {
+      conditional = scrollLength >= width
+    } else if(x > 1){
+      conditional = scrollLength >= width * x
+    }
+    targetActive(conditional, x)
   }
 
-  if (scrollLength >= width) {
-    Object.keys(selector).forEach((btn) => {
-      if (selector[btn].classList.contains(className)) {
-        selector[btn].classList.remove(className);
-      }
-    });
-    focusNo = 1
-  }
-
-
-  if (scrollLength >= width * 2) {
-    Object.keys(selector).forEach((btn) => {
-      if (selector[btn].classList.contains(className)) {
-        selector[btn].classList.remove(className);
-      }
-    });
-    focusNo = 2
-  }
-
-
-  if (scrollLength >= width * 3) {
-    Object.keys(selector).forEach((btn) => {
-      if (selector[btn].classList.contains(className)) {
-        selector[btn].classList.remove(className);
-      }
-    });
-    focusNo = 3
-  }
   selector[focusNo].classList.add(className);
-
 });
