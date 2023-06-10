@@ -89,6 +89,19 @@
   }
 }
 
+.submit-email {
+  &__input {
+    &--error {
+      color: var(--colors-bright-red);
+    }
+  }
+  &__error-txt {
+    margin-left: 1rem;
+    font-size: 0.75rem;
+    color: var(--colors-bright-red);
+  }
+}
+
 .copyright {
   &__paragraph {
     font-size: rem(12px);

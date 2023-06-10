@@ -2,11 +2,9 @@ footer {
   background-color: var(--colors-very-dark-blue);
   padding-top: rem(50px);
   padding-bottom: rem(31px);
-//  padding-left: maxSCSS(38px, 760px);
-//  padding-right: maxSCSS(38px, 760px);
 }
 
-.footer-container{
+.footer-container {
   width: maxSCSS(308px, 1106px);
   margin-left: auto;
   margin-right: auto;
@@ -15,9 +13,13 @@ footer {
 .submit-email {
   width: rem(326px);
   margin-left: auto;
-margin-right: auto;
-
-  &__btn{
+  margin-right: auto;
+  &__input {
+    &--error {
+      border-color: var(--colors-bright-red);
+    }
+  }
+  &__btn {
     width: rem(80px);
   }
   &__error-txt {
@@ -29,4 +31,3 @@ margin-right: auto;
     margin-left: auto;
   }
 }
-

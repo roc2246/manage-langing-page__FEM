@@ -149,6 +149,14 @@ p {
   color: white;
   font-size: 2.25rem; }
 
+.submit-email__input--error {
+  color: var(--colors-bright-red); }
+
+.submit-email__error-txt {
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  color: var(--colors-bright-red); }
+
 .copyright__paragraph {
   font-size: 0.75rem; }
 
@@ -392,6 +400,8 @@ footer {
   width: 20.375rem;
   margin-left: auto;
   margin-right: auto; }
+  .submit-email__input--error {
+    border-color: var(--colors-bright-red); }
   .submit-email__btn {
     width: 5rem; }
   .submit-email__error-txt {

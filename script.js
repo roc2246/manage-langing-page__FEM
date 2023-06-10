@@ -75,7 +75,7 @@ const selector = document.getElementsByClassName("testimonials__selector");
 const className = "testimonials__selector--selected";
 
 let focusNo = 0;
-testimonialCont.scrollLeft = 30
+testimonialCont.scrollLeft = 20;
 
 function removeBtnStyle() {
   Object.keys(selector).forEach((btn) => {
@@ -126,9 +126,9 @@ let drag = false;
 let init;
 let scrollLeft;
 
-testimonialCont.addEventListener('mousedown', (e) => {
+testimonialCont.addEventListener("mousedown", (e) => {
   drag = true;
-  testimonialCont.classList.add('testimonials__container--active');
+  testimonialCont.classList.add("testimonials__container--active");
   init = e.pageX - testimonialCont.offsetLeft;
   scrollLeft = testimonialCont.scrollLeft;
 });
@@ -146,5 +146,22 @@ testimonialCont.addEventListener("mousemove", (e) => {
     const x = e.pageX - testimonialCont.offsetLeft;
     const distance = x - init;
     testimonialCont.scrollLeft = scrollLeft - distance;
+  }
+});
+
+const form = document.getElementsByClassName("submit-email")[0];
+const input = document.getElementsByClassName("submit-email__input")[0];
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const errorMssg = document.getElementsByClassName("submit-email__error-txt")[0];
+
+form.addEventListener("submit", (e) => {
+  input.classList.remove("submit-email__input--error");
+  errorMssg.style.display = "none";
+  e.preventDefault();
+  if (!input.value.match(emailRegex)) {
+    errorMssg.style.display = "block";
+    input.classList.add("submit-email__input--error");
+  } else {
+    alert("Email is valid.");
   }
 });
