@@ -105,13 +105,16 @@ p {
   font-size: 1rem;
   color: var(--colors-dark-blue); }
 
-.nav__links--bottom {
-  white-space: nowrap; }
-  .nav__links--bottom > .nav__link > .nav__anchor {
-    color: var(--colors-dark-blue); }
+.nav__links--top > .nav__link > .nav__anchor {
+  font-weight: var(--font-weights-boldest);
+  color: var(--colors-dark-blue); }
+  .nav__links--top > .nav__link > .nav__anchor:hover {
+    color: var(--colors-dark-grayish-blue); }
 
 .nav__links--bottom > .nav__link > .nav__anchor {
   color: white; }
+  .nav__links--bottom > .nav__link > .nav__anchor:hover {
+    color: var(--colors-bright-red); }
 
 .hero__heading {
   font-size: max(2.1875rem, 2.77778vw); }
