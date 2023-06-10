@@ -16,6 +16,11 @@
     margin-right: auto;
     width: maxSCSS(327px, 1106px);
   }
+  &__img {
+    &:hover {
+      filter: invert(47%) sepia(73%) saturate(2723%) hue-rotate(340deg) brightness(100%) contrast(91%);
+    }
+  }
   &--mobile {
     width: maxSCSS(327px, 1106px);
     margin-top: unset;

@@ -580,6 +580,9 @@ footer {
   margin-right: auto;
   width: max(20.4375rem, 76.80556vw); }
 
+.nav__img:hover {
+  filter: invert(47%) sepia(73%) saturate(2723%) hue-rotate(340deg) brightness(100%) contrast(91%); }
+
 .nav--mobile {
   width: max(20.4375rem, 76.80556vw);
   margin-top: unset; }
