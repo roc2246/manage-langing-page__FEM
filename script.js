@@ -74,8 +74,8 @@ const testimonialCont = document.getElementsByClassName(
 const selector = document.getElementsByClassName("testimonials__selector");
 const className = "testimonials__selector--selected";
 
-let focusNo = 1;
-// testimonial[focusNo].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+let focusNo = 0;
+testimonialCont.scrollLeft = 30
 
 function removeBtnStyle() {
   Object.keys(selector).forEach((btn) => {
@@ -96,7 +96,11 @@ for (let x = 0; x < selector.length; x++) {
   selector[x].addEventListener("click", () => {
     focusNo = x;
     removeBtnStyle();
-    testimonial[focusNo].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    testimonial[focusNo].scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
   });
 }
 
@@ -119,32 +123,28 @@ testimonialCont.addEventListener("scroll", () => {
 });
 
 let drag = false;
-
 let init;
-testimonialCont.addEventListener("mousedown", (e) => {
-  init = e.clientX;
+let scrollLeft;
+
+testimonialCont.addEventListener('mousedown', (e) => {
   drag = true;
+  testimonialCont.classList.add('testimonials__container--active');
+  init = e.pageX - testimonialCont.offsetLeft;
+  scrollLeft = testimonialCont.scrollLeft;
+});
+testimonialCont.addEventListener("mouseleave", () => {
+  drag = false;
+  testimonialCont.classList.remove("testimonials__container--active");
+});
+testimonialCont.addEventListener("mouseup", () => {
+  drag = false;
+  testimonialCont.classList.remove("testimonials__container--active");
 });
 testimonialCont.addEventListener("mousemove", (e) => {
-  const width = testimonial[0].offsetWidth;
-  const screenWidth = screen.width
-  const coord = e.clientX;
+  e.preventDefault();
   if (drag === true) {
-    testimonialCont.classList.add("testimonials__container--active");
-    if (init > width / 2) {
-    testimonialCont.scrollLeft += width;
-    } else if (init < width / 2) {
-    testimonialCont.scrollLeft -= width - coord;
-    }
+    const x = e.pageX - testimonialCont.offsetLeft;
+    const distance = x - init;
+    testimonialCont.scrollLeft = scrollLeft - distance;
   }
-});
-
-testimonialCont.addEventListener("mouseup", () => {
-  testimonialCont.classList.remove("testimonials__container--active");
-  drag = false;
-});
-
-window.addEventListener("mouseup", () => {
-  testimonialCont.classList.remove("testimonials__container--active");
-  drag = false;
 });

@@ -4,9 +4,7 @@
     cursor: grab;
     width: 100%;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    scroll-behavior: smooth;
     &--active{
       cursor: grabbing;
     }
