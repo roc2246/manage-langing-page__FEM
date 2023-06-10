@@ -75,7 +75,7 @@ const selector = document.getElementsByClassName("testimonials__selector");
 const className = "testimonials__selector--selected";
 
 let focusNo = 1;
-testimonial[focusNo].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+// testimonial[focusNo].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 
 function removeBtnStyle() {
   Object.keys(selector).forEach((btn) => {
@@ -96,7 +96,7 @@ for (let x = 0; x < selector.length; x++) {
   selector[x].addEventListener("click", () => {
     focusNo = x;
     removeBtnStyle();
-    testimonial[focusNo].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    // testimonial[focusNo].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
   });
 }
 
